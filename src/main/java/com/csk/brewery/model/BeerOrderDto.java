@@ -1,12 +1,9 @@
-package com.csk.mssc.beer.order.service.web.model;
+package com.csk.brewery.model;
 
 import java.time.OffsetDateTime;
 import java.util.List;
 import java.util.UUID;
 
-import com.csk.mssc.beer.order.service.domain.BeerOrderStatusEnum;
-
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;

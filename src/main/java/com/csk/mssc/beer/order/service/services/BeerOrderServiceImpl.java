@@ -17,8 +17,8 @@ import com.csk.mssc.beer.order.service.domain.BeerOrderStatusEnum;
 import com.csk.mssc.beer.order.service.repository.BeerOrderRepository;
 import com.csk.mssc.beer.order.service.repository.CustomerRepository;
 import com.csk.mssc.beer.order.service.services.web.mapper.BeerOrderMapper;
-import com.csk.mssc.beer.order.service.web.model.BeerOrderDto;
-import com.csk.mssc.beer.order.service.web.model.BeerOrderPagedList;
+import com.csk.brewery.model.BeerOrderDto;
+import com.csk.brewery.model.BeerOrderPagedList;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

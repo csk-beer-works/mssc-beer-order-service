@@ -13,8 +13,8 @@ import com.csk.mssc.beer.order.service.bootstrap.BeerOrderBootStrap;
 import com.csk.mssc.beer.order.service.domain.Customer;
 import com.csk.mssc.beer.order.service.repository.BeerOrderRepository;
 import com.csk.mssc.beer.order.service.repository.CustomerRepository;
-import com.csk.mssc.beer.order.service.web.model.BeerOrderDto;
-import com.csk.mssc.beer.order.service.web.model.BeerOrderLineDto;
+import com.csk.brewery.model.BeerOrderDto;
+import com.csk.brewery.model.BeerOrderLineDto;
 
 import lombok.extern.slf4j.Slf4j;
 

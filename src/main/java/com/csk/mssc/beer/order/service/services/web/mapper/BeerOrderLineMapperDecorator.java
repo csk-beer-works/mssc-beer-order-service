@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 
 import com.csk.mssc.beer.order.service.domain.BeerOrderLine;
 import com.csk.mssc.beer.order.service.services.beer.BeerService;
-import com.csk.mssc.beer.order.service.web.model.BeerOrderLineDto;
+import com.csk.brewery.model.BeerOrderLineDto;
 
 import lombok.extern.slf4j.Slf4j;
 

@@ -1,4 +1,4 @@
-package com.csk.mssc.beer.order.service.web.model;
+package com.csk.brewery.model;
 
 import java.time.OffsetDateTime;
 import java.util.UUID;

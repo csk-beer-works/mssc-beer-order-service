@@ -4,7 +4,7 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
 import com.csk.mssc.beer.order.service.domain.BeerOrder;
-import com.csk.mssc.beer.order.service.web.model.BeerOrderDto;
+import com.csk.brewery.model.BeerOrderDto;
 
 @Mapper(uses = {DateMapper.class, BeerOrderLineMapper.class})
 public interface BeerOrderMapper {

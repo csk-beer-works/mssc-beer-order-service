@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.csk.mssc.beer.order.service.services.BeerOrderService;
-import com.csk.mssc.beer.order.service.web.model.BeerOrderDto;
-import com.csk.mssc.beer.order.service.web.model.BeerOrderPagedList;
+import com.csk.brewery.model.BeerOrderDto;
+import com.csk.brewery.model.BeerOrderPagedList;
 
 @RequestMapping("/api/v1/customers/{customerId}/")
 @RestController
