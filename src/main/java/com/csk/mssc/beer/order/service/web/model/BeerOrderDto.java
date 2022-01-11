@@ -4,7 +4,7 @@ import java.time.OffsetDateTime;
 import java.util.List;
 import java.util.UUID;
 
-import com.csk.mssc.beer.order.service.domain.OrderStatusEnum;
+import com.csk.mssc.beer.order.service.domain.BeerOrderStatusEnum;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -19,7 +19,7 @@ public class BeerOrderDto extends BaseItem {
 
 	@Builder
 	public BeerOrderDto(UUID id, Integer version, OffsetDateTime createdDate, OffsetDateTime lastModifiedDate,
-			UUID customerId, List<BeerOrderLineDto> beerOrderLines, OrderStatusEnum orderStatus,
+			UUID customerId, List<BeerOrderLineDto> beerOrderLines, String orderStatus,
 			String orderStatusCallbackUrl, String customerRef) {
 		super(id, version, createdDate, lastModifiedDate);
 		this.customerId = customerId;
@@ -32,7 +32,7 @@ public class BeerOrderDto extends BaseItem {
 	private UUID customerId;
 	private String customerRef;
 	private List<BeerOrderLineDto> beerOrderLines;
-	private OrderStatusEnum orderStatus;
+	private String orderStatus;
 	private String orderStatusCallbackUrl;
 
 }

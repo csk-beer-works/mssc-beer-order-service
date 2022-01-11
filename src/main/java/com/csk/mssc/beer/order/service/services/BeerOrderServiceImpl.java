@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 
 import com.csk.mssc.beer.order.service.domain.BeerOrder;
 import com.csk.mssc.beer.order.service.domain.Customer;
-import com.csk.mssc.beer.order.service.domain.OrderStatusEnum;
+import com.csk.mssc.beer.order.service.domain.BeerOrderStatusEnum;
 import com.csk.mssc.beer.order.service.repository.BeerOrderRepository;
 import com.csk.mssc.beer.order.service.repository.CustomerRepository;
 import com.csk.mssc.beer.order.service.services.web.mapper.BeerOrderMapper;
@@ -60,7 +60,7 @@ public class BeerOrderServiceImpl implements BeerOrderService {
 			beerOrder.setId(null); // should not be set by outside client
 			
 			beerOrder.setCustomer(optionalCustomer.get());
-			beerOrder.setOrderStatus(OrderStatusEnum.NEW);
+			beerOrder.setOrderStatus(BeerOrderStatusEnum.NEW);
 			
 			beerOrder.getBeerOrderLines().forEach(line -> {
 				line.setBeerOrder(beerOrder);
@@ -90,7 +90,7 @@ public class BeerOrderServiceImpl implements BeerOrderService {
 	@Override
 	public void pickupOrder(UUID customerId, UUID orderId) {
 		BeerOrder beerOrder = getOrder(customerId, orderId);
-        beerOrder.setOrderStatus(OrderStatusEnum.PICKED_UP);
+        beerOrder.setOrderStatus(BeerOrderStatusEnum.PICKED_UP);
 
         beerOrderRepository.save(beerOrder);
 
